@@ -1,0 +1,539 @@
+:root {
+  --background-color: #ffffff; /* Light background */
+  --text-color: #000000; /* Black text for high contrast */
+  --content-bg-color: #f0f0f0; /* Light gray content background */
+  --input-bg-color: #ffffff; /* White input background */
+  --input-border-color: #cccccc; /* Light gray border for inputs */
+  --input-focus-bg-color: #e6e6e6; /* Slight focus change for inputs */
+  --input-focus-border-color: #007bff; /* Blue for focus */
+  --input-placeholder-color: #666666; /* Dark gray placeholders */
+  --btn-primary-bg-color: #007bff; /* Blue for primary buttons */
+  --btn-primary-border-color: #007bff;
+  --btn-primary-hover-bg-color: #0056b3; /* Darker blue for hover */
+  --btn-primary-hover-border-color: #0056b3;
+}
+/* Header.css */
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .login-page-container {
+      flex-direction: column;
+      height: auto; /* Allow content to adjust height based on its size */
+  }
+
+  .login-sidebar {
+      padding: 20px; /* Reduce padding on smaller screens */
+      text-align: center; /* Center text for mobile view */
+  }
+
+  .login-sidebar .title {
+      font-size: 50px; /* Smaller title font size */
+  }
+
+  .login-sidebar .sidebarText,
+  .login-sidebar .sidebarListItem {
+      font-size: 14px; /* Smaller font size for sidebar text */
+  }
+
+  .register-page {
+      padding: 20px; /* Add padding for better spacing on mobile */
+  }
+
+  .formBox {
+      padding: 20px; /* Reduce padding for form box */
+      max-width: 90%; /* Make the form box wider on mobile */
+  }
+
+  .formTitle {
+      font-size: 1.5rem; /* Adjust title size */
+      padding-bottom: 15px; /* Reduce padding below the title */
+  }
+
+  .errorMessage {
+      font-size: 12px; /* Smaller error message font */
+  }
+
+  .loginButton {
+      font-size: 16px; /* Larger button text for better usability */
+  }
+
+  .registerLink {
+      font-size: 14px; /* Smaller font size for register link */
+  }
+}
+
+/* Ensure the styles are applicable for larger devices */
+@media (min-width: 769px) {
+  .login-page-container {
+      display: flex;
+      height: 100vh;
+  }
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa; /* Light background color */
+  padding: 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+}
+.dashboard-container {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.medicine-analysis-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+}
+
+@media (max-width: 768px) {
+  .medicine-analysis-container {
+    padding: 8px;
+  }
+
+  .ant-radio-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+  }
+}
+.table-container {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000;
+  margin-left: 1rem;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.logout-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.active {
+  font-weight: bold; /* Style for active link */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar-links {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f8f9fa;
+    width: 100%;
+    display: none; /* Hidden by default */
+  }
+
+  .navbar-links.active {
+    display: flex; /* Show when active */
+  }
+
+  .navbar-toggler {
+    display: block; /* Show hamburger button on small screens */
+  }
+}
+
+.navbar-toggler {
+  display: none; /* Hidden by default */
+}
+
+/* Add this for the button to toggle the menu in mobile view */
+@media (max-width: 768px) {
+  .navbar-toggler {
+    display: block; /* Show the toggle button */
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .register-page-container {
+      flex-direction: column; /* Stacking elements */
+  }
+  .register-sidebar {
+      padding: 20px; /* Less padding on mobile */
+  }
+  /* Removed empty ruleset for .register-form-container */
+  .form-box {
+      padding: 20px; /* Less padding on mobile */
+      max-width: 90%; /* More width on mobile */
+  }
+}
+
+.navbar {
+  padding: 0;
+  height: 56px;
+  background-color: #f8f9fa; /* Light background */
+  border-bottom: 1px solid #e0e0e0; /* Border for separation */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #007bff; /* Primary color for brand */
+}
+
+.navbar-nav .nav-link {
+  color: #333; /* Dark color for links */
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link.active {
+  color: #007bff; /* Active link color */
+  font-weight: bold;
+}
+
+.logout-button {
+  color: #dc3545; /* Red color for logout button */
+}
+
+.navbar-toggler {
+  border: none; /* No border for the toggler */
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center; /* Center links in mobile view */
+  }
+
+  .navbar-nav .nav-item {
+    margin: 10px 0; /* Add margin for spacing */
+  }
+}
+
+.homepage-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Merriweather', serif;
+  color: #333;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+ul li {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #444;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+  background-color: #f1f1f1;
+}
+
+ul li strong {
+  color: #007bff;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.hero-section h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  color: #f0f0f0;
+}
+
+.get-started-button {
+  padding: 12px 24px;
+  background-color: #f0ad4e;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.4s ease;
+}
+
+.get-started-button:hover {
+  background-color: #ec971f;
+}
+
+.features-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  color: #007bff;
+}
+
+.vision-section,
+.about-section {
+  margin: 40px 0;
+  background-color: #f9f9f9;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .get-started-button {
+    font-size: 1rem;
+    justify-content: center;
+  }
+
+  .homepage-container {
+    padding: 10px;
+  }
+
+  ul li {
+    font-size: 1rem;
+  }
+}
+
+
+/* Transition effects for navigation links and buttons */
+.nav-link, .logout-button {
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-link:hover, .logout-button:hover {
+  color: #0d6efd;  /* Bootstrap primary color for hover effect */
+  background-color: #f8f9fa; /* Light background on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+/* Global body styling */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Arial', sans-serif; /* Clean, readable font */
+}
+
+/* Login page layout */
+.login-page-container {
+  display: flex;
+  height: 100vh;
+}
+
+.login-sidebar {
+  flex: 1;
+  background-color: #e0e0e0;
+  padding: 40px;
+}
+
+.login-form {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--content-bg-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Home page layout */
+.homepage-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--content-bg-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, p, a, blockquote {
+  color: var(--text-color);
+}
+
+/* Anchor link styles */
+a {
+  color: var(--btn-primary-bg-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--btn-primary-hover-bg-color);
+}
+
+/* Button styles for call to action */
+.get-started-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--btn-primary-bg-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.get-started-button:hover {
+  background-color: var(--btn-primary-hover-bg-color);
+}
+
+/* Community forum card */
+.community-forums {
+  margin-top: 30px;
+  padding: 10px;
+  border: 1px solid var(--btn-primary-bg-color);
+  border-radius: 4px;
+  background-color: var(--input-bg-color);
+  transition: transform 0.3s ease;
+}
+
+.community-forums:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .homepage-container {
+    padding: 10px;
+  }
+
+  .get-started-button {
+    padding: 8px 16px;
+  }
+}
+
+/* Login form input styling */
+.login-form .ant-input,
+.login-form .ant-input-password {
+  background-color: var(--input-bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--input-border-color);
+}
+
+.login-form .ant-btn-primary {
+  background-color: var(--btn-primary-bg-color);
+  border-color: var(--btn-primary-border-color);
+}
+
+.login-form .ant-btn-primary:hover,
+.login-form .ant-btn-primary:focus {
+  background-color: var(--btn-primary-hover-bg-color);
+  border-color: var(--btn-primary-hover-border-color);
+}
+
+.login-form .ant-input:focus,
+.login-form .ant-input-password:focus {
+  background-color: var(--input-focus-bg-color);
+  border-color: var(--input-focus-border-color);
+  color: var(--text-color);
+}
+
+/* Registration form styling */
+.register-page {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-page .ant-input,
+.register-page .ant-input-password {
+  background-color: var(--input-bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--input-border-color);
+}
+
+.register-page .ant-input:focus,
+.register-page .ant-input-password:focus {
+  background-color: var(--input-focus-bg-color);
+  border-color: var(--input-focus-border-color);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  --background-color: #1e1e1e;
+  --text-color: #ffffff;
+  --content-bg-color: #2b2b2b;
+  --input-bg-color: #2b2b2b;
+  --input-border-color: #444444;
+  --input-focus-bg-color: #3b3b3b;
+  --input-focus-border-color: #ff3333;
+  --input-placeholder-color: #bbbbbb;
+  --btn-primary-bg-color: #ff3333;
+  --btn-primary-border-color: #ff3333;
+  --btn-primary-hover-bg-color: #cc0000;
+  --btn-primary-hover-border-color: #cc0000;
+}
