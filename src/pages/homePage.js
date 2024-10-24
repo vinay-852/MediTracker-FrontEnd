@@ -8,7 +8,7 @@ const HeroSection = () => (
   <section className="hero-section">
     <h1>Welcome to MediTracker</h1>
     <p>Your health, our priority. Track your medical records effortlessly.</p>
-    <Link to="/get-started" className="get-started-button">Get Started</Link>
+    <Link to="/schedule" className="get-started-button">Get Started</Link>
   </section>
 );
 
