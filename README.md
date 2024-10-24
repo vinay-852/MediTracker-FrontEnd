@@ -28,14 +28,22 @@ MediTracker is a web application that assists users in managing their medication
     npm start
     ```
 
+
 ## Usage
 
 - **Home Page**: The main landing page.
+  <img width="1437" alt="Screenshot 2024-10-24 at 12 37 35 PM" src="https://github.com/user-attachments/assets/0ea73876-8418-47c1-8e5e-03b64b2d3cd9">
 - **Register**: Create a new account.
+  <img width="1440" alt="Screenshot 2024-10-24 at 12 28 53 PM" src="https://github.com/user-attachments/assets/cb98c64b-48b7-4ece-a445-ccf6eef1aceb">
 - **Login**: Access an existing account.
+  <img width="1440" alt="Screenshot 2024-10-24 at 12 27 19 PM" src="https://github.com/user-attachments/assets/df2459d5-e677-47ba-85fa-c30f8dad602b">
+
+
 - **Schedule**: Manage medication schedules.
-- **Logger**: Log medicine intake.
+  <img width="1440" alt="Screenshot 2024-10-24 at 12 33 48 PM" src="https://github.com/user-attachments/assets/a1746a9e-1769-447f-af42-a7cd7d73a2f2">
 - **Dashboard**: View logs of medicine intake.
+  <img width="1440" alt="Screenshot 2024-10-24 at 12 35 20 PM" src="https://github.com/user-attachments/assets/99111011-b884-4399-aaf2-9eabcaee4951">
+
 
 ## API Integration
 
@@ -54,7 +62,6 @@ The application uses Axios to communicate with the backend API. The base URL is 
 - **Register**: User registration page.
 - **Login**: User login page.
 - **Schedule**: Manage medication schedules.
-- **UserLogger**: Log medicine intake.
 - **UserLogs**: View logs of medicine intake.
 
 ## Testing
