@@ -6,24 +6,37 @@ import { Link } from 'react-router-dom';
 // HeroSection Component
 const HeroSection = () => (
   <section className="hero-section">
+    <h1>Welcome to MediTracker</h1>
+    <p>Your health, our priority. Track your medical records effortlessly.</p>
+    <Link to="/get-started" className="get-started-button">Get Started</Link>
   </section>
 );
 
 // FeaturesSection Component
 const FeaturesSection = () => (
   <section className="features-section">
+    <h2>Features</h2>
+    <ul>
+      <li><strong>Easy Tracking:</strong> Keep track of your medical records with ease.</li>
+      <li><strong>Reminders:</strong> Set reminders for your medications and appointments.</li>
+      <li><strong>Reports:</strong> Generate detailed health reports.</li>
+    </ul>
   </section>
 );
 
 // VisionSection Component
 const VisionSection = () => (
   <section className="vision-section">
+    <h2>Our Vision</h2>
+    <p>At MediTracker, we aim to revolutionize the way you manage your health. Our vision is to provide a seamless and efficient platform for tracking medical records, ensuring that you have all the information you need at your fingertips.</p>
   </section>
 );
 
 // AboutSection Component
 const AboutSection = () => (
   <section className="about-section">
+    <h2>About Us</h2>
+    <p>MediTracker is a leading health management platform dedicated to helping individuals keep track of their medical records. Our team of experts is committed to providing the best tools and resources to ensure your health is always a top priority.</p>
   </section>
 );
 
