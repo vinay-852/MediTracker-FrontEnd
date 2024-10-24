@@ -1,70 +1,82 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# MediTracker
 
-## Available Scripts
+MediTracker is a web application that assists users in managing their medication schedules and logging their medicine intake. It features an intuitive interface for scheduling, logging, and viewing medication records.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **User Authentication**: Secure login and registration.
+- **Medicine Scheduling**: Schedule medication times for various compartments.
+- **Medicine Logging**: Log medicine intake with timestamps.
+- **User Logs**: Access logs of medicine intake.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/yourusername/meditracker.git
+    cd meditracker
+    ```
 
-### `npm test`
+2. Install dependencies:
+    ```sh
+    npm install
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Start the development server:
+    ```sh
+    npm start
+    ```
 
-### `npm run build`
+## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Home Page**: The main landing page.
+- **Register**: Create a new account.
+- **Login**: Access an existing account.
+- **Schedule**: Manage medication schedules.
+- **Logger**: Log medicine intake.
+- **Dashboard**: View logs of medicine intake.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## API Integration
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The application uses Axios to communicate with the backend API. The base URL is set in [`src/api.js`](src/api.js).
 
-### `npm run eject`
+## Components
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **PrivateRoute**: Protects routes that require authentication.
+- **Layout**: Common layout for different pages.
+- **Header**: The application's header.
+- **ResetLogsButton**: Button to reset logs.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Pages
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **HomePage**: The main landing page.
+- **Register**: User registration page.
+- **Login**: User login page.
+- **Schedule**: Manage medication schedules.
+- **UserLogger**: Log medicine intake.
+- **UserLogs**: View logs of medicine intake.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Testing
 
-## Learn More
+Run tests with:
+```sh
+npm test
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Build
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Build the project for production with:
+```sh
+npm run build
+```
 
-### Code Splitting
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The frontend is deployed at [MediTracker Frontend](https://meditracker-feaj.onrender.com).
 
-### Analyzing the Bundle Size
+The backend repository is available at [MediTracker Backend](https://github.com/vinay-852/MediTracker-Backend) and is deployed at [MediTracker Backend Deployment](https://meditracker-backend.onrender.com).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## License
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License.
